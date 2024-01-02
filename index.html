@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble-clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <!-- Navigation and main landing page  -->
+    <div id="page1">
+        <!-- Navigation bar  -->
+        <div id="nav-bar">
+            <div id="nav-left-side">
+                <h3><a href="">Find talent</a></h3>
+                <h3><a href="">Inspiration</a></h3>
+                <div id="drop-down-menu">
+                    <h3><a href="">Learn design<i class="ri-arrow-down-s-line"></i></a></h3>
+                    <div class="dropdown-elements">
+                        <div class="elem">
+                            <h2>UX Diploma</h2>
+                            <p>in partnership with UX Design Institute</p>
+                        </div>
+                        <div class="elem">
+                            <h2>Live interactive workshops</h2>
+                            <p>with design professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <h3><a href="">Jobs</a></h3>
+                <h3><a href="">Go Pro</a></h3>
+
+            </div>
+            <div id="nav-center">
+                <h2>Dribbble</h2>
+            </div>
+            <div id="nav-right-side">
+                <div id="search-part">
+                    <i class="ri-search-line"></i>
+                    <input class="search-input" type="text" name="q" placeholder="Search..." autocomplete="off"
+                        value="">
+                </div>
+                <button><a href="">Log in</a></button>
+                <button><a href="">Sign up</a></button>
+            </div>
+        </div>
+
+        <!-- main website landing page  -->
+        <div id="main-landing-page">
+            <h4>Over 3 million ready-to-work creatives!</h4>
+            <h1>Work with the world's top creative talent.</h1>
+            <h3>Connect with millions of top-rated designers & agencies around the world.</h3>
+            <button><a href="">Start hiring today</a></button>
+        </div>
+    </div>
+
+    <!-- Designers scrolling profile -->
+    <div id="scroll-div">
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Mobile</p>
+                    <p>Web</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Dinella Ville</h3>
+                <h3>Principal Animation</h3>
+                <div class="tags">
+                    <p>Animation</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Marcedes Badana</h3>
+                <h3>Illustrator Designer</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Lilla Bardenova</h3>
+                <h3>Brand + Illustrator</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Vladimir Gruev</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Elif Kamesuglu</h3>
+                <h3>Brand Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Illustration</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Design Director</h3>
+                <div class="tags">
+                    <p>Product</p>
+                    <p>Web</p>
+                    <p>UX</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Mobile</p>
+                    <p>Web</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Dinella Ville</h3>
+                <h3>Principal Animation</h3>
+                <div class="tags">
+                    <p>Animation</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Marcedes Badana</h3>
+                <h3>Illustrator Designer</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Lilla Bardenova</h3>
+                <h3>Brand + Illustrator</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Vladimir Gruev</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Elif Kamesuglu</h3>
+                <h3>Brand Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Illustration</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Design Director</h3>
+                <div class="tags">
+                    <p>Product</p>
+                    <p>Web</p>
+                    <p>UX</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Mobile</p>
+                    <p>Web</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Dinella Ville</h3>
+                <h3>Principal Animation</h3>
+                <div class="tags">
+                    <p>Animation</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Marcedes Badana</h3>
+                <h3>Illustrator Designer</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Lilla Bardenova</h3>
+                <h3>Brand + Illustrator</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Vladimir Gruev</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Elif Kamesuglu</h3>
+                <h3>Brand Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Illustration</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Design Director</h3>
+                <div class="tags">
+                    <p>Product</p>
+                    <p>Web</p>
+                    <p>UX</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Mobile</p>
+                    <p>Web</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Dinella Ville</h3>
+                <h3>Principal Animation</h3>
+                <div class="tags">
+                    <p>Animation</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Marcedes Badana</h3>
+                <h3>Illustrator Designer</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Lilla Bardenova</h3>
+                <h3>Brand + Illustrator</h3>
+                <div class="tags">
+                    <p>Illustrator</p>
+                    <p>UI</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Vladimir Gruev</h3>
+                <h3>Digital Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Elif Kamesuglu</h3>
+                <h3>Brand Designer</h3>
+                <div class="tags">
+                    <p>Brand</p>
+                    <p>Illustration</p>
+                    <p>Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=320x399&vertical=center"
+                alt="">
+            <div class="profile-card-info">
+                <h3>Victa Ville</h3>
+                <h3>Design Director</h3>
+                <div class="tags">
+                    <p>Product</p>
+                    <p>Web</p>
+                    <p>UX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Explore inspiring designs section  -->
+
+    <div id="page3">
+        <div class="title">
+            <p>Explore inspiring designs</p>
+        </div>
+        <div id="designs">
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11884697/file/original-3015705a083b7c98b0ebc0ceb259549c.gif"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Garden Street Inm</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Yondr Studio</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11917060/file/original-484be66e7e75c9a275dba65ace5187f0.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Gingerbread Cabin 🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Peter Voth</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11884047/file/original-644eb668b8be3c87be24664ce58b4cd1.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>🍭🍫 Wonka 🍫🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Muti</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11740249/file/original-7a6241f0f2181a1d7c9adfb70bba55f4.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Jungle Mode</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Ruslan Babkin</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11775047/file/original-aee39bc4360eafe8e531ff32b467cd03.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Garden Street Inm</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Yondr Studio</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11778823/file/original-e0e71e1a17e737266b1a3ee00edaf711.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Gingerbread Cabin 🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Peter Voth</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11921042/file/original-fd4f96df41af5f7b3a2af08c008eca08.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>🍭🍫 Wonka 🍫🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Muti</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11648624/file/original-bd5063865567b26368d92078fce6f0ad.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Jungle Mode</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Ruslan Babkin</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11897750/file/still-0dea1e1f78824c3ec7b66dde27d23f85.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Garden Street Inm</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Yondr Studio</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11923118/file/original-63e80cfb0eebfe02bcda08099c26bcfd.jpg?resize=400x300&vertical=center "
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Gingerbread Cabin 🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Peter Voth</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/12159002/file/original-28aef95b5565a610c56f7c230996fa20.jpg?crop=0x88-4169x3215&resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>🍭🍫 Wonka 🍫🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Muti</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11668770/file/original-8437519db993f33f4a6d815e56cb5eae.jpg?crop=0x349-3075x2655&resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Jungle Mode</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Ruslan Babkin</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11751402/file/original-e9150ceba30353976e029cfe1508eb3c.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Garden Street Inm</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Yondr Studio</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11892900/file/original-ab573df9db07da8cf459c14cc97eebda.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Gingerbread Cabin 🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Peter Voth</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/12024246/file/original-9a933df6cb71b6a76fc8c941320337af.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>🍭🍫 Wonka 🍫🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Muti</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11810342/file/original-cc9c2eddda8e6a8886add65b0509def1.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Jungle Mode</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Ruslan Babkin</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/12027403/file/original-d36c07d64997470b3c849c18f08e4c6f.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Garden Street Inm</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Yondr Studio</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/12027806/file/original-a4d5d18bd694873780a65dd2e69e7d89.jpg?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Gingerbread Cabin 🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Peter Voth</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11838052/file/original-cc4d63bfd9ee428278493bfb6cf15ca4.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>🍭🍫 Wonka 🍫🍭</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Muti</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="design-cards">
+                <div class="img-content">
+                    <img src="https://cdn.dribbble.com/userupload/11999821/file/original-7a83d0dbee6b4d7bdd2d068e31e4d254.png?resize=400x300&vertical=center"
+                        alt="">
+                    <div class="hidden-content">
+                        <p>Jungle Mode</p>
+                        <div>
+                            <i class="ri-bookmark-line"></i>
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="part-1">
+                        <img src="https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463"
+                            alt="">
+                        <p>Ruslan Babkin</p>
+                        <p><span>PRO</span></p>
+                    </div>
+                    <div class="part-2">
+                        <i class="ri-heart-3-fill"><span>550</span></i>
+                        <i class="ri-eye-fill"><span>234k</span></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="browse-button">
+            <button><a href="">Browse more inspiration</a></button>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

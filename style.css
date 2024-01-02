@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F8F7F4;
+    /* background-color: #FFFFFF; */
+    /* background-color: yellow; */
+    /* font-family: 'Gilroy'; */
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#page1 {
+    width: 100%;
+    height: 80%;
+    /* background-color: yellow; */
+}
+
+#nav-bar {
+    width: 100%;
+    /* height: 13.5vh; */
+    height: 17%;
+    display: grid;
+    /* grid-template-columns: 40% 23% 39%; */
+    grid-template-columns: 560px auto auto;
+    grid-template-rows: 100%;
+    align-content: center;
+    /* justify-content: space-between; */
+    gap: 30px;
+    /* background-color: pink; */
+    /* padding: 0 2.4vw; */
+    padding: 10px 40px;
+}
+
+#nav-left-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    /* background-color: blue; */
+}
+
+#nav-left-side h3 {
+    /* font-size: 0.9vw; */
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: -0.1px;
+}
+
+#nav-left-side h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-left-side h3 i {
+    /* font-size: 1vw; */
+    font-weight: 600;
+    /* background-color: yellow; */
+}
+
+#drop-down-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.dropdown-elements {
+    display: none;
+    background-color: white;
+    border-radius: 16px;
+    /* width: 19vw; */
+    width: 250px;
+    /* height: 20vh; */
+    padding: 10px 5px 10px 20px;
+    position: absolute;
+    top: 109%;
+    left: -20%;
+    z-index: 1;
+    /* background-color: yellow; */
+}
+
+.dropdown-elements .elem {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+.dropdown-elements .elem h2 {
+    /* font-size: 1vw; */
+    font-size: 14.5px;
+    line-height: 1.1;
+}
+
+.dropdown-elements .elem p {
+    /* font-size: 0.85vw; */
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#nav-left-side h3:hover a {
+    color: rgb(107, 106, 106);
+}
+
+#drop-down-menu:hover .dropdown-elements {
+    display: block;
+    transition: all ease 0.3s;
+    /* transition-duration: 3s; */
+}
+
+.dropdown-elements:hover,
+#nav-center h2:hover {
+    cursor: pointer;
+}
+
+#nav-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: orangered; */
+}
+
+#nav-center h2 {
+    font-family: 'Damion';
+    transform-origin: 0%;
+    rotate: -6deg;
+    /* font-size: 2.1vw; */
+    font-size: 33px;
+    font-weight: 500;
+}
+
+#nav-center h2::selection {
+    user-select: none;
+}
+
+
+#nav-right-side {
+    padding-right: 1vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+}
+
+#nav-right-side #search-part {
+    /* height: 45%; */
+    display: flex;
+    align-items: center;
+    height: 46px;
+    width: 18vw;
+    background-color: white;
+    /* font-size: 1.2vw; */
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
+    /* padding: 1.5vh 0 0 3vw; */
+    padding-left: 2vw;
+    /* border-radius: 5vw; */
+    border-radius: 30px;
+}
+
+#nav-right-side #search-part input {
+    background-color: transparent;
+    /* background-color: yellow; */
+    /* padding-left: 0.2vw; */
+    margin-left: 0.3vw;
+    /* font-size: 1vw; */
+    font-size: 16px;
+    border: none;
+    outline: none;
+    /* height: 100%; */
+}
+
+#nav-right-side #search-part input::-webkit-input-placeholder {
+    text-align: left;
+    /* font-size: 1vw; */
+    font-size: 15px;
+    color: #888;
+    font-weight: 400;
+    /* line-height: 4; */
+}
+
+#nav-right-side button a {
+    text-decoration: none;
+    /* font-size: 1.1vw; */
+    font-size: 15px;
+    letter-spacing: 0px;
+    /* padding-top: 5vh; */
+    font-weight: 500;
+}
+
+#nav-right-side button:nth-child(2) a {
+    color: #403f3f;
+    font-weight: 600;
+}
+
+#nav-right-side button:nth-child(3) a {
+    color: white;
+}
+
+#nav-right-side button {
+    width: 100px;
+    height: 50px;
+    /* margin-left: 0.0vw; */
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+#nav-right-side button:nth-child(2) {
+    /* margin-left: 0.1vw; */
+    background-color: transparent;
+}
+
+#nav-right-side button:nth-child(3) {
+    /* border-radius: 5vw; */
+    border-radius: 30px;
+    background-color: black;
+}
+
+#nav-right-side button:nth-child(2):hover a {
+    cursor: pointer;
+    color: rgb(107, 106, 106);
+}
+
+#nav-right-side button:nth-child(3):hover {
+    background-color: #403f3f;
+    transition: all ease 0.2s;
+}
+
+/*
+    - End of navigation bar
+*/
+
+
+/* Start of website main landing page  */
+
+#main-landing-page {
+    width: 80%;
+    height: 80%;
+    /* background-color: blue; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 7vw 2.5vh 7vw;
+}
+
+#main-landing-page h4 {
+    width: fit-content;
+    padding: 1.5vh 1.5vw;
+    /* font-size: 1.2vw; */
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    /* border-radius: 5vw; */
+    border-radius: 30px;
+    font-weight: 500;
+    background-color: plum;
+}
+
+#main-landing-page h1 {
+    /* padding: 4vh 10vw; */
+    margin-top: 5px;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 1px;
+    /* border-radius: 5vh; */
+    font-weight: 400;
+    font-family: serif;
+    line-height: 1;
+    /* background-color: orangered; */
+}
+
+#main-landing-page h3 {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#main-landing-page button {
+    width: 175px;
+    height: 57px;
+    /* margin-left: 0.0vw; */
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: black;
+}
+
+#main-landing-page button a {
+    text-decoration: none;
+    /* font-size: 1.1vw; */
+    font-size: 16px;
+    letter-spacing: 0px;
+    /* padding-top: 5vh; */
+    font-weight: 500;
+    color: white;
+}
+
+#main-landing-page button:hover {
+    background-color: #403f3f;
+    transition: all ease 0.2s;
+}
+
+
+/* End of website main landing page */
+
+/*
+- Start of page 2 : auto scrolling profiles
+*/
+
+
+#scroll-div {
+    height: 55%;
+    width: 100%;
+    padding: 2vw 2vw;
+    /* background-color: orangered; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+    /* align-items: center; */
+    /* margin-top: auto; */
+}
+
+
+
+#scroll-div::-webkit-scrollbar {
+    display: none;
+}
+
+
+#scroll-div .profile-card {
+    flex-shrink: 0;
+    height: 100%;
+    width: 19%;
+    border-radius: 25px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation-name: scroll-profile-animation;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    transition: all ease 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@keyframes scroll-profile-animation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-490vw);
+    }
+
+}
+
+#scroll-div .profile-card img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#scroll-div .profile-card .profile-card-info {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(81, 79, 79, 0.01));
+    width: 150%;
+    position: absolute;
+    left: 0%;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    bottom: 0%;
+}
+
+#scroll-div .profile-card .profile-card-info h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#scroll-div .profile-card .profile-card-info .tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    margin-top: 5px;
+    /* background-color: yellow; */
+}
+
+#scroll-div .profile-card .profile-card-info .tags p {
+    width: fit-content;
+    border: 1px solid rgb(205, 199, 199);
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    color: white;
+    /* background-color: blue; */
+}
+
+/*
+- End of page 2 : auto scrolling profiles
+*/
+
+/*
+- Start of page 3 : auto scrolling profiles
+*/
+
+#page3 {
+    width: 100%;
+    margin-top: 13vh;
+    /* background-color: blue; */
+}
+
+#page3 .title {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#page3 #designs {
+    width: 100%;
+    /* height: auto; */
+    /* display: inline-block; */
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    /* gap: 50px; */
+    position: relative;
+}
+
+#page3 .design-cards {
+    /* flex-shrink: 0; */
+    /* float: left; */
+
+    margin-top: 50px;
+    height: 38vh;
+    width: 22%;
+    /* padding: 5px; */
+    position: relative;
+    overflow: hidden;
+    /* background-color: pink; */
+
+}
+
+#page3 .design-cards .img-content {
+    width: 100%;
+    height: 33vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    /* background-color: blue; */
+}
+
+.img-content img {
+    /* border-radius: 15px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.img-content:hover {
+    cursor: pointer;
+}
+
+.img-content:hover .hidden-content {
+    opacity: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.hidden-content {
+    opacity: 0;
+    width: 100%;
+    height: 12vh;
+    /* height: fit-content; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(35, 35, 35, 0.8), rgba(168, 167, 167, 0.1));
+}
+
+.hidden-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.hidden-content i {
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    /* align-items: center;
+    justify-content: center; */
+    color: black;
+    background-color: white;
+    font-size: 17px;
+}
+
+.hidden-content i:hover {
+    color: gray;
+}
+
+
+.bottom-content {
+    /* padding: 10px 5px; */
+    width: 100%;
+    height: 5vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-content .part-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 10px;
+    height: 100%;
+}
+
+.bottom-content .part-1 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.bottom-content .part-1 p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bottom-content .part-1 p span {
+    font-size: 11px;
+    background-color: rgb(143, 140, 140);
+    padding: 2px 4px;
+    color: white;
+    border-radius: 5px;
+    /* background-color: black; */
+}
+
+
+.bottom-content .part-1 p:hover,
+.bottom-content .part-1 img:hover {
+    cursor: pointer;
+}
+
+.bottom-content .part-1 p span:hover {
+    background-color: black;
+}
+
+.bottom-content .part-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.bottom-content .part-2 i {
+    font-size: 15px;
+    color: rgb(143, 140, 140);
+}
+
+
+.bottom-content .part-2 i:nth-child(1):hover {
+    cursor: pointer;
+    color: palevioletred;
+}
+
+.bottom-content .part-2 i:nth-child(1):hover span {
+    cursor: default;
+    color: rgb(143, 140, 140);
+}
+
+
+.browse-button {
+
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-button button {
+    width: fit-content;
+    height: auto;
+    padding: 18px 25px;
+    /* margin-left: 0.0vw; */
+    border-radius: 30px;
+    border: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+
+.browse-button button a {
+    text-decoration: none;
+    /* font-size: 1.1vw; */
+    font-size: 14px;
+    letter-spacing: 0px;
+    /* padding-top: 5vh; */
+    font-weight: 600;
+    color: black;
+}
+
+.browse-button button:hover {
+    cursor: pointer;
+    border: 1px solid #7c7a7a;
+}
+
+.browse-button button:hover a {
+    color: #7c7a7a;
+}
+
+/*
+- End of page 3 : auto scrolling profiles
+*/
