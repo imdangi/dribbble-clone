@@ -277,7 +277,8 @@ body {
     letter-spacing: 1px;
     /* border-radius: 5vh; */
     font-weight: 400;
-    font-family: serif;
+    /* font-family: serif; */
+    font-family: 'source serif 4';
     line-height: 1;
     /* background-color: orangered; */
 }
@@ -647,3 +648,209 @@ body {
 /*
 - End of page 3 : auto scrolling profiles
 */
+
+
+/*
+    start of page 4 :find your designer section 
+*/
+#page4 {
+    width: 100%;
+    height: 90%;
+    background-color: #FFDA79;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#page4 h2 {
+    font-family: 'source serif 4';
+    text-align: center;
+    width: 45%;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#page4 p {
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 39%;
+    text-align: center;
+
+}
+
+#page4 #btn button {
+    margin-right: 20px;
+    /* padding: 25px 20px; */
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    height: 55px;
+    padding: 0px 30px;
+    width: fit-content;
+}
+
+#page4 #btn button a {
+    text-decoration: none;
+    color: black;
+}
+
+#page4 #btn button:hover {
+    cursor: pointer;
+}
+
+#page4 #btn button:nth-child(1) a {
+    color: white;
+}
+
+#page4 #btn button:nth-child(1) {
+    background-color: black;
+}
+
+
+#page4 #btn button:nth-child(1):hover {
+    background-color: #918c8c;
+    transition: all ease 0.2s;
+}
+
+#page4 #btn button:nth-child(2):hover a {
+    color: #403f3f;
+}
+
+#page4 p:nth-child(4) {
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 39%;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+#page4 p a {
+    color: black;
+    padding-left: 5px;
+    /* text-decoration: none; */
+}
+
+#page4 h2,
+p,
+a::selection {
+    user-select: none;
+}
+
+/*
+    End of page 4 
+*/
+
+
+/* Start of footer */
+
+#footer {
+    padding: 5vh 10vw 6vh 10vw;
+    margin-top: 10vh;
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#part1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#part1 p a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+#part1 #social a {
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+#brand-logo {
+    /* height: 100%; */
+    height: fit-content;
+    width: fit-content;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: orangered; */
+}
+
+#brand-logo h2 {
+    font-family: 'Damion';
+    transform-origin: 0%;
+    rotate: -6deg;
+    /* font-size: 2.1vw; */
+    font-size: 33px;
+    font-weight: 500;
+}
+
+#brand-logo h2::selection {
+    user-select: none;
+}
+
+#brand-logo:hover {
+    cursor: pointer;
+}
+
+#links {
+    /* height: fit-content; */
+    padding: 2px;
+    width: 70%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    /* gap: 20px; */
+
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: purple; */
+    gap: 8px;
+}
+
+#part2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#part2 p a,
+p {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #5a5858;
+}
+
+#part2 #left {
+    display: flex;
+    gap: 15px;
+}
+
+#part2 #right {
+    display: flex;
+    gap: 15px;
+}
+
+/* End of footer section  */
